@@ -3,7 +3,6 @@ import imgProfile from '../../../assets/profile.jpg'
 import imgIconModifyWhite from '../../../assets/icon-modify-white.svg'
 import imgIconLogout from '../../../assets/icon-logout.svg'
 
-
 export default function Login() {
   return (
     <>

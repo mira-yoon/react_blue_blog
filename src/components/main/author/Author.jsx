@@ -1,3 +1,4 @@
+import './author.css'
 
 export default function Author({userName, created, profileImg}) {
   return (

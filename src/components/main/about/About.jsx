@@ -31,7 +31,7 @@ export default function About() {
       {userData !== undefined ? (
         <aside className="about">
           <h2>About Me</h2>
-          <img src="./images/profile.jpg" alt="" className="user-profile" />
+          <img src={userData.profileImg} alt="" className="user-profile" />
           <p className="user-name">{userData.name}</p>
           <p className="user-description">{userData.userInfo}</p>
           <h3>Categories</h3>

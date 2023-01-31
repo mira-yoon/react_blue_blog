@@ -1,12 +1,10 @@
 import { useEffect, useState, useContext } from 'react'
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 import UserContext from '../../context/UserContext'
-import Category from './category/Category'
-import Author from './author/Author'
+
 import About from './about/About'
 import Posts from './posts/Posts'
-
+import './main.css'
 
 export default function Main() {
 
@@ -27,34 +25,9 @@ export default function Main() {
         <div className="max-width">
           <h2 className="a11y-hidden">Post</h2>
           <ul className="posts">
-            {posts.map(post =>
-              <li key={post.id}>
-                <Link to={`/post/${post.id}`} className="post">
-                  <article>
-                    <img src={post.thumbnail} alt="" />
-                    <div className="contents-wrap">
-                      <Category 
-                        category={post.category} 
-                      />
-
-                      <h3>{post.title}</h3>
-
-                      <Author 
-                        userName={post.userName} 
-                        created={post.created} 
-                        profileImg={post.profileImg} 
-                      />
-
-                      <p className="post-description">
-                        {post.contents[0].text}
-                      </p>
-                    </div>
-                  </article>
-                </Link>
-              </li>
-            )}
+            <Posts posts={posts} />
           </ul> 
-          {isLogin ? <About/> : <></>}
+          {isLogin ? <About /> : <></>}
         </div>
       ) : null}
     </main>

@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import './banner.css'
 
 export default function BlogDetail() {
 
-  const [blogInfo, setBlogInfo] = useState(undefined)
+  const [blogInfo, setBlogInfo] = useState({})
 
   useEffect(()=>{
     axios
@@ -16,14 +17,14 @@ export default function BlogDetail() {
     })
   },[])
 
-  
+
 
   return (
     <div className="banner">
 			<div className="max-width">
 				<div className="banner-contents">
-					{/* <p className="sub-text">{blogInfo.subTitle}</p>
-					<p className="main-text">{blogInfo.mainTitle}</p> */}
+					<p className="sub-text">{blogInfo.subTitle}</p>
+					<p className="main-text">{blogInfo.mainTitle}</p>
           <p className="description">
             {blogInfo === undefined ? 
             '로딩 중' : blogInfo === null ? 
