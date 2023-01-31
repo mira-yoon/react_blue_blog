@@ -8,7 +8,8 @@ export default function Posts({posts}) {
     <>
       {posts.map(post =>
         <li key={post.id}>
-          <Link to={`/post/${post.id}`} className="post">
+          <Link to={`/blog/${post.id}`} className="post">
+          {/* <Link to={`/post/${post.id}`} className="post"> */}
             <article>
               <img src={post.thumbnail} alt="" />
               <div className="contents-wrap">

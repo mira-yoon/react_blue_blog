@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './banner.css'
 
-export default function BlogDetail() {
+export default function Banner() {
 
   const [blogInfo, setBlogInfo] = useState({})
 
@@ -23,16 +23,16 @@ export default function BlogDetail() {
     <div className="banner">
 			<div className="max-width">
 				<div className="banner-contents">
-					<p className="sub-text">{blogInfo.subTitle}</p>
-					<p className="main-text">{blogInfo.mainTitle}</p>
+          <p className="sub-text">{blogInfo.subTitle}</p>
+          <p className="main-text">{blogInfo.mainTitle}</p>
           <p className="description">
             {blogInfo === undefined ? 
             '로딩 중' : blogInfo === null ? 
             '404' : blogInfo.description}
           </p>
-          
 				</div>
 			</div>
 		</div>
   )
 }
+

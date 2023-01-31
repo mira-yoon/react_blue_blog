@@ -1,7 +1,7 @@
 {
 	"blog": {
 		"mainTitle": "My BLOG",
-		"subTitle": "React & Node",
+		"subTitle": "React.js",
 		"description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nostrum dolor provident beatae deserunt magnam, illo neque. Maiores ipsum commodi dolorum beatae aliquid laboriosam est"
 	},
 	"posts": [
@@ -27,7 +27,8 @@
 				}
 			],
 			"userName": "Chilli",
-			"created": "2022.04.01"
+			"created": "2023.02.01",
+			"createdDay": "Wednesday"
 		},
 		{
 			"id": 2,
@@ -55,7 +56,8 @@
 				}
 			],
 			"userName": "Chilli",
-			"created": "2022.04.02"
+			"created": "2023.01.24",
+			"createdDay": "Tuesday"
 		},
 		{
 			"id": 3,
@@ -79,7 +81,8 @@
 				}
 			],
 			"userName": "Chilli",
-			"created": "2022.04.03"
+			"created": "2023.01.15",
+			"createdDay": "Sunday"
 		},
 		{
 			"id": 4,
@@ -103,7 +106,8 @@
 				}
 			],
 			"userName": "Chilli",
-			"created": "2022.04.04"
+			"created": "2023.01.02",
+			"createdDay": "Monday"
 		},
 		{
 			"id": 5,
@@ -131,7 +135,8 @@
 				}
 			],
 			"userName": "Chilli",
-			"created": "2022.04.05"
+			"created": "2022.12.25",
+			"createdDay": "Sunday"
 		},
 		{
 			"id": 6,
@@ -155,7 +160,8 @@
 				}
 			],
 			"userName": "Chilli",
-			"created": "2022.05.25"
+			"created": "2022.12.15",
+			"createdDay": "Thursday"
 		}
 	],
 
