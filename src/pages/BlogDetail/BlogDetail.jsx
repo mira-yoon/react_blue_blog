@@ -20,7 +20,9 @@ export default function BlogDetail() {
 
   return (
     <>
-      {post === undefined ? <div>로딩 중</div> : post === null ? <div>404</div> : <div>{post.title}</div>}
+      {post === undefined ? 
+      <div>로딩 중</div> : post === null ? 
+      <div>404</div> : <div>{post.title}</div>}
     </>
   )
 }

@@ -4,10 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import UserContext from './context/UserContext'
 import BlogDetail from './pages/BlogDetail/BlogDetail'
 import Home from './pages/Home/Home'
-import data from './database/data.json'
 
 function App() {
-	const [userId, setUserId] = useState(0);
+	const [userId, setUserId] = useState(1);
 	const [isLogin, setIsLogin] = useState(true);
 
 
