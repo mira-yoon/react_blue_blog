@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react_blue_blog/static/css/main.c1d95da7.css",
-    "main.js": "/react_blue_blog/static/js/main.7b9ec7c9.js",
+    "main.js": "/react_blue_blog/static/js/main.d3497559.js",
     "static/media/background.jpg": "/react_blue_blog/static/media/background.9d8ffdf2b026e3a71002.jpg",
     "static/media/icon-modify.svg": "/react_blue_blog/static/media/icon-modify.a0c44dddeeb034405fbd.svg",
     "static/media/icon-delete.svg": "/react_blue_blog/static/media/icon-delete.cdfd12b1245deea1ae59.svg",
@@ -15,10 +15,10 @@
     "static/media/ArrowLeft-blue.svg": "/react_blue_blog/static/media/ArrowLeft-blue.a8f040986b41c7713bf5.svg",
     "static/media/ArrowTop.svg": "/react_blue_blog/static/media/ArrowTop.31b9123f76deea3066cd.svg",
     "main.c1d95da7.css.map": "/react_blue_blog/static/css/main.c1d95da7.css.map",
-    "main.7b9ec7c9.js.map": "/react_blue_blog/static/js/main.7b9ec7c9.js.map"
+    "main.d3497559.js.map": "/react_blue_blog/static/js/main.d3497559.js.map"
   },
   "entrypoints": [
     "static/css/main.c1d95da7.css",
-    "static/js/main.7b9ec7c9.js"
+    "static/js/main.d3497559.js"
   ]
 }
