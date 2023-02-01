@@ -11,7 +11,7 @@ export default function BlogDetail() {
   const [post, setPost] = useState(undefined);
   useEffect(()=>{
     axios
-    .get(`http://localhost:3001/posts/${postNumber}`)
+    .get(`https://mira-yoon.github.io/react_blue_blog/database/post${postNumber}.json`)
     .then((json)=>{
       setPost(json.data)  
     })

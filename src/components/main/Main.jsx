@@ -12,9 +12,9 @@ export default function Main() {
   const [posts, setPosts] = useState()
   useEffect(()=>{
     axios
-    .get("http://localhost:3001/posts")
+    .get("https://mira-yoon.github.io/react_blue_blog/database/posts.json")
     .then((json)=>{
-      setPosts(json.data)  
+      setPosts(json.data)
     })
   },[])
 

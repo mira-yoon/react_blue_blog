@@ -12,9 +12,9 @@ export default function About() {
 
   useEffect(()=>{
     axios
-    .get(`http://localhost:3001/users/${userId}`)
+    .get(`https://mira-yoon.github.io/react_blue_blog/database/user${userId}.json`)
     .then((json)=>{
-      setUserData(json.data)  
+      setUserData(json.data)    
     })
   },[])
 

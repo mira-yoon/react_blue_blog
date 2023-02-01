@@ -8,7 +8,7 @@ export default function Banner() {
 
   useEffect(()=>{
     axios
-    .get('http://localhost:3001/blog')
+    .get('https://mira-yoon.github.io/react_blue_blog/database/blog.json')
     .then((json)=>{
       setBlogInfo(json.data)  
     })
