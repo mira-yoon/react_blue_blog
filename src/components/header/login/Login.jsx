@@ -12,12 +12,6 @@ export default function Login() {
         </Link>
       </li>
       <li>
-        <Link to="/" className="button">
-          <img src={process.env.PUBLIC_URL + '/assets/icon-modify-white.svg'} alt="" />
-          <span>Write</span>
-        </Link>
-      </li>
-      <li>
         <button className="button white" onClick={()=>{setIsLogin(false)}}>
           <img src={process.env.PUBLIC_URL + '/assets/icon-logout.svg'} alt="" />
           <span>Logout</span>

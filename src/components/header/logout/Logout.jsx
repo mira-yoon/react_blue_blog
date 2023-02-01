@@ -14,12 +14,6 @@ export default function Logout() {
           <span>Login</span>
         </button>
       </li>
-      <li className="only-pc">
-        <Link to="#" className="button gray">
-          <img src={process.env.PUBLIC_URL + '/assets/icon-register.svg'} alt="" />
-          <span>Register</span>
-        </Link>
-      </li> 
     </>
   )
 }

@@ -68,13 +68,13 @@ export default function BlogDetail() {
               <div className="view-contents">
                 {post.contents.map((content, idx) => 
                   content.type === "p" ? <p key={idx}>{post.contents[idx].text}</p> : 
-                  content.type === "img" ? <img  key={idx} src={post.contents[idx].src} alt="" /> : null
+                  content.type === "img" ? <img  key={idx} src={process.env.PUBLIC_URL + post.contents[idx].src} alt="" /> : null
                 )}
               </div>
               <div className="btn-group">
-                <Link to="/" className="btn-modify">
+                <button type="button" className="btn-modify">
                   <span className="a11y-hidden">modify</span>
-                </Link>
+                </button>
                 <button type="button" className="btn-delete">
                   <span className="a11y-hidden">delete</span>
                 </button>
