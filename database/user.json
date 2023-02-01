@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "email": "Mira@blog.com",
+        "profileImg": "/assets/profile.jpg",
+        "name": "Mira",
+        "userInfo": "안녕하세요! 저는 프론트엔드 개발자 윤미라입니다.",
+        "category": ["Life", "Style", "Tech", "Sport", "Photo", "Develop", "Music"],
+        "sns": { "GitHub": "", "Facebook": "", "Twitter": "", "Instagram": "" }
+    },
+    {
+        "id": 2,
+        "email": "binky@blog.com",
+        "profileImg": "/assets/profile.jpg",
+        "name": "Binky",
+        "userInfo": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        "category": ["Life", "Style", "Tech", "Sport", "Photo", "Develop", "Music"],
+        "sns": { "GitHub": "", "Facebook": "", "Twitter": "", "Instagram": "" }
+    }
+]
