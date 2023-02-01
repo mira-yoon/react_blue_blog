@@ -18,11 +18,11 @@ function App() {
 			<Header/>
 			<Routes>
 				<Route 
-					path="/" 
+					path={process.env.PUBLIC_URL + '/'} 
 					element={<Home/>}
 				/>
 				<Route 
-					path="/blog/:id"
+					path={process.env.PUBLIC_URL + '/blog/:id'}
 					element={<BlogDetail/>}
 				/>
 			</Routes>
