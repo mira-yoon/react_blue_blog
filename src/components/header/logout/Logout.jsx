@@ -1,8 +1,6 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import UserContext from '../../../context/UserContext'
-import imgIconLogin from '../../../assets/icon-login.svg'
-import imgIconRegister from '../../../assets/icon-register.svg'
 
 export default function Logout() {
 
@@ -12,13 +10,13 @@ export default function Logout() {
     <>
       <li>
         <button className="button gray" onClick={()=>{setIsLogin(true)}}>
-          <img src={imgIconLogin} alt="" />
+          <img src={process.env.PUBLIC_URL + '/assets/icon-login.svg'} alt="" />
           <span>Login</span>
         </button>
       </li>
       <li className="only-pc">
         <Link to="#" className="button gray">
-          <img src={imgIconRegister} alt="" />
+          <img src={process.env.PUBLIC_URL + '/assets/icon-register.svg'} alt="" />
           <span>Register</span>
         </Link>
       </li> 

@@ -2,7 +2,8 @@ import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import Login from './login/Login'
 import Logout from './logout/Logout'
-import imgLogo from '../../assets/Logo.svg'
+// import imgLogo from '../../assets/Logo.svg'
+// import imgLogo from process.env.PUBLIC_URL + '/assets/Logo.svg'
 import UserContext from '../../context/UserContext'
 import './header.css'
 import './button.css'
@@ -16,7 +17,7 @@ export default function Header() {
 			<div className="max-width">
 				<h1>
 					<Link to="/">
-						<img src={imgLogo} alt="My Blog" />
+						<img src={process.env.PUBLIC_URL + '/assets/Logo.svg'} alt="My Blog" />
 					</Link>
 				</h1>
 				<ul>

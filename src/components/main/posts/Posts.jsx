@@ -11,7 +11,7 @@ export default function Posts({posts}) {
           <Link to={`/blog/${post.id}`} className="post">
           {/* <Link to={`/post/${post.id}`} className="post"> */}
             <article>
-              <img src={post.thumbnail} alt="" />
+              <img src={process.env.PUBLIC_URL + post.thumbnail} alt="" />
               <div className="contents-wrap">
                 <Category 
                   category={post.category} 

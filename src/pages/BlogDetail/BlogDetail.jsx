@@ -49,7 +49,7 @@ export default function BlogDetail() {
 
               <dl className="author-wrap">
                 <dt className="a11y-hidden">Author</dt>
-                <dd className="author"><img src={post.profileImg} alt="" /> {post.userName}</dd>
+                <dd className="author"><img src={process.env.PUBLIC_URL + post.profileImg} alt="" /> {post.userName}</dd>
                 <dt className="a11y-hidden">Created</dt>
                 <dd className="created">{post.created}</dd>
               </dl>
@@ -93,7 +93,7 @@ export default function BlogDetail() {
 
 export function BannerDetail({month, date, mainBg, day}) {
   return (
-    <div className="banner" style={{background: `url(${mainBg}) no-repeat 50% 50% / cover`}}>
+    <div className="banner" style={{background: `url(${process.env.PUBLIC_URL + mainBg}) no-repeat 50% 50% / cover`}}>
       <div className="max-width">
         <div className="banner-contents">
           <p className="today">

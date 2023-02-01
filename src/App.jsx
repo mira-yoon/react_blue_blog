@@ -5,6 +5,7 @@ import UserContext from './context/UserContext'
 import BlogDetail from './pages/BlogDetail/BlogDetail'
 import Header from './components/header/Header'
 import Home from './pages/Home/Home'
+import './reset.css'
 import './app.css'
 
 function App() {

@@ -2,10 +2,6 @@ import { useEffect, useState, useContext } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import UserContext from '../../../context/UserContext'
-import imgFacebook from '../../../assets/Facebook.svg'
-import imgTwitter from '../../../assets/Twitter.svg'
-import imgInstagram from '../../../assets/Instagram.svg'
-import imgGitHub from '../../../assets/Github.svg'
 import './about.css'
 
 
@@ -13,10 +9,6 @@ export default function About() {
 
   const {userId} = useContext(UserContext)
   const [userData, setUserData] = useState()
-
-  const snsImage = {
-    imgFacebook, imgTwitter, imgInstagram, imgGitHub
-  }
 
   useEffect(()=>{
     axios
@@ -31,7 +23,7 @@ export default function About() {
       {userData !== undefined ? (
         <aside className="about">
           <h2>About Me</h2>
-          <img src={userData.profileImg} alt="" className="user-profile" />
+          <img src={process.env.PUBLIC_URL + userData.profileImg} alt="" className="user-profile" />
           <p className="user-name">{userData.name}</p>
           <p className="user-description">{userData.userInfo}</p>
           <h3>Categories</h3>
@@ -45,7 +37,7 @@ export default function About() {
             {Object.keys(userData.sns).map((s, index) => 
               <li key={index}>
                 <Link to="">
-                  <img src={snsImage['img' + s]} alt={s} />
+                  <img src={process.env.PUBLIC_URL + `/assets/${s}.svg`} alt={s} />
                 </Link>
               </li>
             )}
