@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import UserContext from './context/UserContext'
 import BlogDetail from './pages/BlogDetail/BlogDetail'
 import Header from './components/header/Header'
@@ -9,24 +9,22 @@ import './app.css'
 
 function App() {
 	const [userId] = useState(1);
-	const [isLogin] = useState(true);
+	const [isLogin, setIsLogin] = useState(true);
 
 
 	return (
-		<UserContext.Provider value={{userId, isLogin}}>
-			<BrowserRouter>
-				<Header/>
-				<Routes>
-					<Route 
-						path="/" 
-						element={<Home/>}
-					/>
-					<Route 
-						path="/blog/:id"
-						element={<BlogDetail/>}
-					/>
-				</Routes>
-			</BrowserRouter>
+		<UserContext.Provider value={{userId, isLogin, setIsLogin}}>
+			<Header/>
+			<Routes>
+				<Route 
+					path="/" 
+					element={<Home/>}
+				/>
+				<Route 
+					path="/blog/:id"
+					element={<BlogDetail/>}
+				/>
+			</Routes>
 		</UserContext.Provider>
 	)
 }

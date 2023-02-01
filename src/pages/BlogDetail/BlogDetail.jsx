@@ -36,8 +36,6 @@ export default function BlogDetail() {
     date = post.created.slice(8,10); 
   }
 
-  console.log(post.contents)
-
   return (
     <>
       <BannerDetail month={month} date={date} mainBg={post.mainBg} day={post.createdDay} />
@@ -69,8 +67,8 @@ export default function BlogDetail() {
               <hr />
               <div className="view-contents">
                 {post.contents.map((content, idx) => 
-                  content.type === "p" ? <p>{post.contents[idx].text}</p> : 
-                  content.type === "img" ? <img src={post.contents[idx].src} alt="" /> : null
+                  content.type === "p" ? <p key={idx}>{post.contents[idx].text}</p> : 
+                  content.type === "img" ? <img  key={idx} src={post.contents[idx].src} alt="" /> : null
                 )}
               </div>
               <div className="btn-group">
