@@ -18,7 +18,7 @@ function App() {
 			<Header/>
 			<Routes>
 				<Route 
-					path={process.env.PUBLIC_URL + '/'} 
+					path='/'
 					element={<Home/>}
 				/>
 				<Route 
