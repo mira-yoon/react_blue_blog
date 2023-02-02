@@ -22,7 +22,7 @@ function App() {
 					element={<Home/>}
 				/>
 				<Route 
-					path={process.env.PUBLIC_URL + '/blog/:id'}
+					path='/blog/:id'
 					element={<BlogDetail/>}
 				/>
 			</Routes>
