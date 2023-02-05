@@ -13,7 +13,7 @@ JavaScript, React.js, CSS
 1. 컴포넌트 단위로 UI개발
 2. React Router(version 6)로 라우팅 처리
 3. URL 파라미터로 detail페이지 만들기
-4. 페이지를 불러오지 않고 DOM만 조작해서 페이지를 보여주도록 <Link/>로 페이지 연결
+4. 페이지를 불러오지 않고 DOM만 조작해서 페이지를 보여주도록 Link로 페이지 연결
 5. ContextAPI와 useContext로 여러 컴포넌트에 props를 통해 데이터 전달
 6. Axios 라이브러리로 ajax요청을 해서 json 데이터 불러오기
 7. useEffect로 첫 랜더링시에만 ajax 요청하기
