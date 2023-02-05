@@ -1,5 +1,7 @@
 # 리액트 블로그
 
+<a href="https://mira-yoon.github.io/react_blue_blog/" target="_blank">리액트 블로그로 바로가기</a>
+
 ## 1. 소개
 React.js로 만든 싱글 페이지 어플리케이션입니다.  
 개인용 블로그로, 메인페이지와 상세페이지가 있습니다. 
